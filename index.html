@@ -36,6 +36,14 @@
       margin-bottom: 20px;
       border: 1px solid #ddd;
       padding: 20px;
+      overflow: hidden; /* Ensures the container wraps around floated elements */
+    }
+
+    .team-member img {
+      float: left;
+      margin-right: 20px;
+      border: 2px solid #333;
+      border-radius: 50%; /* Make the image circular */
     }
   </style>
 </head>
@@ -52,17 +60,23 @@
   <h1>Welcome to Our Team CV</h1>
 
   <div class="team-member">
-    <h2>John Doe</h2>
-    <p>Position: Software Engineer</p>
-    <p>Experience: 5 years</p>
-    <p>Email: john.doe@example.com</p>
+    <img src="photo/raven.jpg" alt="Raven Valdez" width="100" height="100">
+    <div>
+      <h2>Raven Valdez</h2>
+      <p>Position: Software Engineer</p>
+      <p>Experience: 5 years</p>
+      <p>Email: raven.valdez@example.com</p>
+    </div>
   </div>
 
   <div class="team-member">
-    <h2>Jane Smith</h2>
-    <p>Position: Graphic Designer</p>
-    <p>Experience: 3 years</p>
-    <p>Email: jane.smith@example.com</p>
+    <img src="rochelle_simbulan.jpg" alt="Rochelle Simbulan" width="100" height="100">
+    <div>
+      <h2>Rochelle Simbulan</h2>
+      <p>Position: Graphic Designer</p>
+      <p>Experience: 3 years</p>
+      <p>Email: rochelle.simbulan@example.com</p>
+    </div>
   </div>
 
   <!-- Add more team members as needed -->
